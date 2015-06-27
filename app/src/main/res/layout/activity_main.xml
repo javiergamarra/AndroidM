@@ -1,21 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <data>
-
-        <variable
-            name="movie"
-            type="com.nhpatt.androidm.model.Movie" />
-    </data>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/databinding"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{movie.title}" />
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/data_binding" />
+
+        <Button
+            android:id="@+id/applinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/applinks" />
+
+        <Button
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/coordinator_layout" />
+
+        <Button
+            android:id="@+id/direct_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/direct_share" />
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/fab" />
+
+        <Button
+            android:id="@+id/material_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/material_edit_text" />
+
+        <Button
+            android:id="@+id/observable_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/observable_binding" />
+
+        <Button
+            android:id="@+id/permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/permissions" />
+
+        <Button
+            android:id="@+id/snackbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/snackbar" />
+
+        <Button
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/tab_layout" />
+
+        <Button
+            android:id="@+id/vector_drawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/vector_drawable" />
+
     </LinearLayout>
-</layout>
+</ScrollView>

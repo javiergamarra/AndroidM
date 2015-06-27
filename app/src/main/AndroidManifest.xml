@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nhpatt.androidm" >
+    package="com.nhpatt.androidm">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.BindingActivity" />
+        <activity android:name=".activities.PermissionsActivity" />
+        <activity android:name=".activities.SnackbarActivity" />
+        <activity android:name=".activities.DirectShareActivity" />
+        <activity android:name=".activities.MaterialEditTextsActivity" />
+        <activity android:name=".activities.TabLayoutActivity" />
+        <activity android:name=".activities.FABActivity" />
+        <activity android:name=".activities.VectorDrawableActivity" />
+        <activity android:name=".activities.CoordinatorLayoutActivity" />
+        <activity android:name=".activities.AppLinksActivity" />
+        <activity android:name=".activities.ObservableBindingActivity" />
     </application>
 
 </manifest>
